@@ -333,7 +333,7 @@ def main(imagePath, imageName,debug, gridNum, masks):
 
     getPos()
     getAttitude()
-    
+    count = 0
     if(not debug):
         
         #Removes old preprocessed files
