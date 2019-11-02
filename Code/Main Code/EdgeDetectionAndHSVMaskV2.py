@@ -212,7 +212,7 @@ def processCanny(imageIn, debug):
 
 
 def bound(height, width, x, y, distance):
-    
+
     yStart = round(y - distance)
     xStart = round(x - distance)
     yEnd = round(y + distance)
@@ -352,11 +352,11 @@ def main(imagePath, imageName,debug, gridNum, masks):
 
     # These funcs will either init the avionics data or give them
     # the default values if pixhawk is not connected
-    
+
     getPos()
     getAttitude()
     count = 0
-    
+
     if(not debug):
 
         #Removes old preprocessed files
