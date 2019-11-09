@@ -1,0 +1,60 @@
+def getPos():
+    """
+    This function populates the globals for position data
+    """
+	
+def getAttitude():
+    """
+    This function populates the 3-D attitude globals
+    """
+	
+def myWaitKey(imageIn, debug, message):
+    """
+    This function tells the image processor to wait until a key is pressed
+    Each key tells the function what to reassign the global debug variable
+    """
+	
+def getMask(imageHSV, pos, masks):
+    """
+    This function returns a mask
+    """
+	
+def processHSV(imageIn, debug, iMask, masks):
+    # Converts a rgb image into hsv and applies filter
+
+def processCanny(imageIn, debug):
+    
+def bound(height, width, x, y, distance):
+
+def blobDetection(mask):
+
+def track(imagePath, imageName,debug, gridNum, masks, count):
+
+def main(imagePath, imageName,debug, gridNum, masks):
+	#Decides what part of the code to run
+
+# this code calls main
+print(imagePath)
+main(imagePath, imageName, debug, gridNum, masks)
+
+
+
+
+NOTES FOR IMPLEMENTATION OF CLASSES
+
+main gets its own file
+
+FILE 0: PIXHAWK
+	getPos
+	getAttitude
+
+FILE 1: CV_Processing
+	getMask
+	myWaitKey
+	processHSV
+	processCanny
+	blobDetection
+	
+FILE 2: Splitting
+	track
+	bound
