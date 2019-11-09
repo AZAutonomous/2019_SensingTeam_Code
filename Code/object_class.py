@@ -12,21 +12,27 @@ import json
 
 class TrivialObj:
 
-	def __init__(self):
+	def __init__(self, path_with_file=None):
 
-		self.description = None
-		self.user = "AZ"
-		self.autonomous = True
-		self.type = "standard"
+		if not path_with_file:
 
-		self.alphanumeric_color = None
-		self.alphanumeric = None
-		self.shape = None
-		self.shape_color = None
-		self.alphanumeric_orientation = None
+			self.description = None
+			self.user = "AZ"
+			self.autonomous = True
+			self.type = "standard"
 
-		self.latitude = 0
-		self.longitude = 0
+			self.alphanumeric_color = None
+			self.alphanumeric = None
+			self.shape = None
+			self.shape_color = None
+			self.alphanumeric_orientation = None
+
+			self.latitude = 0
+			self.longitude = 0
+
+		else:
+
+			self.init_from_json(path_with_file)
 
 	def create_dict(self):
 		
