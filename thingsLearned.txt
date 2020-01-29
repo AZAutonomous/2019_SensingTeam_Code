@@ -1,0 +1,3 @@
+
+Running create_target:
+  python create_targets.py -s 28 jpg
