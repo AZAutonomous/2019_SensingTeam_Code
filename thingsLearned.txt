@@ -1,3 +1,9 @@
 
 Running create_target:
   python create_targets.py -s 28 jpg
+
+Google Colab
+  How to turn colab into gpu mode:
+    top left hit edit
+     notebook settings
+      hardware accelerator -> GPU
